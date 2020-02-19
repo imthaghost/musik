@@ -50,7 +50,7 @@ func main() {
 	// Named route "index"
 	e.GET("/", func(c echo.Context) error {
 		return c.Render(http.StatusOK, "index.html", map[string]interface{}{
-			"name": "Juice Wrld - End Of The Road",
+			"name": "Ransom - Lil Tecca & Juice Wrld",
 		})
 	}).Name = "index"
 
