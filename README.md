@@ -13,50 +13,17 @@ musik is a music discovery web application built in GO. Simply GO to the web-ser
 
 <br>
 <p align="center">
-   <a href="#"><img src="https://github.com/imthaghost/musik/blob/master/docs/media/home.png"></a>  
+   <a href="#"><img src="https://github.com/imthaghost/musik/blob/master/docs/media/end.png"></a>  
 </p>
 <br>
 
 ### 📚 Table of Contents
 
-1. [Project Structure](#project-structure)
-2. [Getting Started](#getting-started)
-3. [Deliverables](#deliverables)
-4. [Resources](#resources)
+1. [Goals](#goals)
+2. [Local Development](#local-development)
+3. [Deliverables](#project-structure)
 
-## Project Structure
-
-```bash
-📂 musik
-├── LICENSE
-├── README.md
-├── css
-│   └── styles.css
-├── docs
-│   └── media
-│       ├── donate.png
-│       └── home.png
-├── fonts
-│   ├── product-sans-bold.svg
-│   ├── product-sans-bold.ttf
-│   ├── product-sans-bold.woff
-│   ├── product-sans-bold.woff2
-│   ├── product-sans-regular.svg
-│   ├── product-sans-regular.ttf
-│   ├── product-sans-regular.woff
-│   └── product-sans-regular.woff2
-├── images
-│   ├── favicon.png
-│   └── thumbnail.jpg
-├── index.html
-├── js
-│   └── scripts.min.js
-├── music
-│   └── endoftheroad.mp3
-└── track.js
-```
-
-## Deliverables
+## Goals
 
 ## Local Development
 
@@ -64,4 +31,33 @@ musik is a music discovery web application built in GO. Simply GO to the web-ser
 
 ```bash
 go run server.go
+```
+
+## Project Structure
+
+```bash
+📂 musik
+├── LICENSE
+├── README.md
+├── index.html
+├── assets
+│   ├── css
+│   │   └── styles.css
+│   ├── fonts
+│   ├── images
+│   │   ├── favicon.png
+│   │   └── thumbnail.jpg
+│   ├── js
+│   │   ├── scripts.min.js
+│   │   └── track.js
+│   └── music
+│       └── endoftheroad.mp3
+├── controllers
+│   └── test
+│       └── handler.go
+├── go.mod
+├── go.sum
+├── html
+│   └── render.go
+└── server.go
 ```
