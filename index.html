@@ -1,444 +1,515 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- Primary Meta Tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1"
+        />
+        <title>Musik</title>
+        <meta name="title" content="Musik" />
+        <meta name="description" content="Discover new music" />
+        <meta name="author" content="@imthaghost" />
 
-<head>
-    <!-- Primary Meta Tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>Musik</title>
-    <meta name="title" content="Musik" />
-    <meta name="description" content="Discover new music" />
-    <meta name="author" content="@imthaghost" />
+        <!-- Twitter -->
+        <meta property="twitter:title" content="Musik" />
+        <meta property="twitter:description" content="Discover new music" />
+        <meta property="twitter:image" content="images/social.jpg" />
 
-    <!-- Twitter -->
-    <meta property="twitter:title" content="Musik" />
-    <meta property="twitter:description" content="Discover new music" />
-    <meta property="twitter:image" content="images/social.jpg" />
+        <!-- Linked Assets -->
+        <link href="images/favicon.png" rel="shortcut icon" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="images/thumbnail.jpg" rel="apple-touch-icon" />
+    </head>
 
-    <!-- Linked Assets -->
-    <link href="images/favicon.png" rel="shortcut icon" />
-    <link href="css/styles.css" rel="stylesheet" />
-    <link href="images/thumbnail.jpg" rel="apple-touch-icon" />
-</head>
-
-<body class="animsition">
-    <nav class="nav">
-        <div class="left">
-            <img class="logo"
-                src="https://d33wubrfki0l68.cloudfront.net/6b865dd7d830b2036acac440a14e37ec63169c8d/680cf/images/logo.svg"
-                alt="CastUpon" />
-            <h1 class="nav-title hide-mobile">
-                Discover new music
-            </h1>
-        </div>
-        <div class="right">
-            <a class="button naked" href="https://github.com/imthaghost"
-                target="_blank"><span>Questions?</span>@imthaghost</a>
-            <button class="button tiny popup-toggle hide-mobile">
-                Sponsor?
-            </button>
-            <a href="mailto:imthaghost@protonmail.com" class="button tiny hide-desktop show-mobile">Sponsor?</a>
-            <div class="hide-mobile">
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-        </div>
-    </nav>
-    <div class="popup">
-        <div class="hide-mobile">
-            <div class="popup-header">
-                <img class="logo"
+    <body class="animsition">
+        <nav class="nav">
+            <div class="left">
+                <img
+                    class="logo"
                     src="https://d33wubrfki0l68.cloudfront.net/6b865dd7d830b2036acac440a14e37ec63169c8d/680cf/images/logo.svg"
-                    alt="CastUpon" />
-                <h2 class="popup-title">Discover new music</h2>
-                <div class="divider"></div>
+                    alt="CastUpon"
+                />
+                <h1 class="nav-title hide-mobile">
+                    Discover new music
+                </h1>
             </div>
-            <div class="form-wrapper">
-                <div class="form-success">
-                    <h2>🎈</h2>
-                    <h2>Sent</h2>
-                    <p>We'll get back to you within a day.</p>
+            <div class="right">
+                <a
+                    class="button naked"
+                    href="https://github.com/imthaghost"
+                    target="_blank"
+                    ><span>Questions?</span>@imthaghost</a
+                >
+                <button class="button tiny popup-toggle hide-mobile">
+                    Sponsor?
+                </button>
+                <a
+                    href="mailto:imthaghost@protonmail.com"
+                    class="button tiny hide-desktop show-mobile"
+                    >Sponsor?</a
+                >
+                <div class="hide-mobile">
+                    <script
+                        async
+                        src="https://platform.twitter.com/widgets.js"
+                        charset="utf-8"
+                    ></script>
                 </div>
-                <form name="sponsor" class="form-sponsor" method="POST">
-                    <input type="hidden" name="form-name" value="sponsor" />
-                    <div class="input">
-                        <input type="text" name="name" id="name" class="input-text input-name"
-                            placeholder="What's your full name?" required />
-                        <label for="name" class="input-label">Full name</label>
+            </div>
+        </nav>
+        <div class="popup">
+            <div class="hide-mobile">
+                <div class="popup-header">
+                    <img
+                        class="logo"
+                        src="https://d33wubrfki0l68.cloudfront.net/6b865dd7d830b2036acac440a14e37ec63169c8d/680cf/images/logo.svg"
+                        alt="CastUpon"
+                    />
+                    <h2 class="popup-title">Discover new music</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="form-wrapper">
+                    <div class="form-success">
+                        <h2>🎈</h2>
+                        <h2>Sent</h2>
+                        <p>We'll get back to you within a day.</p>
                     </div>
-                    <div class="input">
-                        <input type="text" name="company" id="company" class="input-text"
-                            placeholder="What's your company's name?" />
-                        <label for="company" class="input-label">Company name</label>
-                    </div>
-                    <div class="input">
-                        <input type="email" name="email" id="email" class="input-text" placeholder="What's your email?"
-                            required />
-                        <label for="email" class="input-label">Email address</label>
-                    </div>
-                    <div class="input">
-                        <input type="text" name="budget" id="budget" class="input-text"
-                            placeholder="What's your budget?" />
-                        <label for="budget" class="input-label">Budget</label>
-                    </div>
-                    <button type="submit" class="send">Send</button>
-                </form>
+                    <form name="sponsor" class="form-sponsor" method="POST">
+                        <input type="hidden" name="form-name" value="sponsor" />
+                        <div class="input">
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                class="input-text input-name"
+                                placeholder="What's your full name?"
+                                required
+                            />
+                            <label for="name" class="input-label"
+                                >Full name</label
+                            >
+                        </div>
+                        <div class="input">
+                            <input
+                                type="text"
+                                name="company"
+                                id="company"
+                                class="input-text"
+                                placeholder="What's your company's name?"
+                            />
+                            <label for="company" class="input-label"
+                                >Company name</label
+                            >
+                        </div>
+                        <div class="input">
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                class="input-text"
+                                placeholder="What's your email?"
+                                required
+                            />
+                            <label for="email" class="input-label"
+                                >Email address</label
+                            >
+                        </div>
+                        <div class="input">
+                            <input
+                                type="text"
+                                name="budget"
+                                id="budget"
+                                class="input-text"
+                                placeholder="What's your budget?"
+                            />
+                            <label for="budget" class="input-label"
+                                >Budget</label
+                            >
+                        </div>
+                        <button type="submit" class="send">Send</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-    <button class="popup-close">
-        <i class="icon" data-feather="chevron-up"></i>
-    </button>
-    <div class="hero">
-        <div class="cover tilt cover-fill" data-tilt>
-            <img id="coverImg" class="cover-img"
+        <button class="popup-close">
+            <i class="icon" data-feather="chevron-up"></i>
+        </button>
+        <div class="hero">
+            <div class="cover tilt cover-fill" data-tilt>
+                <img
+                    id="coverImg"
+                    class="cover-img"
+                    src="https://content-images.p-cdn.com/images/public/int/7/8/3/3/00602508243387_1080W_1080H.jpg"
+                    alt="We Love You Tecca"
+                />
+            </div>
+            <div class="progress-wrapper">
+                <p class="currenttime time">00:00:00</p>
+                <progress class="progress" value="0"></progress>
+                <p class="duration time">00:00:00</p>
+            </div>
+            <h2 class="title">
+                {{index . "name"}}
+            </h2>
+            <div class="controls">
+                <div class="player">
+                    <button class="player-icon mute">
+                        <i
+                            data-feather="volume-x"
+                            class="icon icon-mute hide"
+                        ></i
+                        ><i
+                            data-feather="volume-2"
+                            class="icon icon-unmute"
+                        ></i>
+                    </button>
+                    <button class="player-icon skip rewind">
+                        <span>15s</span
+                        ><i class="icon" data-feather="skip-back"></i>
+                    </button>
+                    <button class="player-icon pause cover-fill">
+                        <i class="icon" data-feather="pause"></i>
+                    </button>
+                    <button class="player-icon play cover-fill">
+                        <i class="icon" data-feather="play"></i>
+                    </button>
+                    <button class="player-icon skip forward">
+                        <i class="icon" data-feather="skip-forward"></i
+                        ><span>15s</span>
+                    </button>
+                    <button class="player-icon speed">1x</button>
+                    <audio src="music/ransom.mp3"></audio>
+                </div>
+                <div class="buttons">
+                    <button
+                        onclick="randomSite();"
+                        class="button next cover-fill"
+                    >
+                        New Song <i class="icon" data-feather="shuffle"></i>
+                    </button>
+                    <a
+                        class="button source cover-outline cover-color"
+                        href="https://github.com/imthaghost/musik/"
+                        target="_blank"
+                        >Source Code
+                        <i
+                            class="icon cover-color"
+                            data-feather="external-link"
+                        ></i
+                    ></a>
+                </div>
+            </div>
+        </div>
+        <div class="cover-bg">
+            <img
                 src="https://content-images.p-cdn.com/images/public/int/7/8/3/3/00602508243387_1080W_1080H.jpg"
-                alt="We Love You Tecca" />
+            />
         </div>
-        <div class="progress-wrapper">
-            <p class="currenttime time">00:00:00</p>
-            <progress class="progress" value="0"></progress>
-            <p class="duration time">00:00:00</p>
-        </div>
-        <h2 class="title">
-            {{index . "name"}}
-        </h2>
-        <div class="controls">
-            <div class="player">
-                <button class="player-icon mute">
-                    <i data-feather="volume-x" class="icon icon-mute hide"></i><i data-feather="volume-2"
-                        class="icon icon-unmute"></i>
-                </button>
-                <button class="player-icon skip rewind">
-                    <span>15s</span><i class="icon" data-feather="skip-back"></i>
-                </button>
-                <button class="player-icon pause cover-fill">
-                    <i class="icon" data-feather="pause"></i>
-                </button>
-                <button class="player-icon play cover-fill">
-                    <i class="icon" data-feather="play"></i>
-                </button>
-                <button class="player-icon skip forward">
-                    <i class="icon" data-feather="skip-forward"></i><span>15s</span>
-                </button>
-                <button class="player-icon speed">1x</button>
-                <audio src="music/ransom.mp3"></audio>
-            </div>
-            <div class="buttons">
-                <button onclick="randomSite();" class="button next cover-fill">
-                    New Song <i class="icon" data-feather="shuffle"></i>
-                </button>
-                <a class="button source cover-outline cover-color" href="music/ransom.mp3" target="_blank">Source
-                    <i class="icon cover-color" data-feather="external-link"></i></a>
-            </div>
-        </div>
-    </div>
-    <div class="cover-bg">
-        <img src="https://content-images.p-cdn.com/images/public/int/7/8/3/3/00602508243387_1080W_1080H.jpg" />
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        var _gauges = _gauges || [];
-        (function () {
-            var t = document.createElement('script');
-            t.type = 'text/javascript';
-            t.async = true;
-            t.id = 'gauges-tracker';
-            t.setAttribute('data-site-id', '5c2bf409d013b9134d84d262');
-            t.setAttribute(
-                'data-track-path',
-                'https://track.gaug.es/track.gif'
-            );
-            t.src = 'https://d2fuc4clr7gvcn.cloudfront.net/track.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(t, s);
-        })();
-    </script>
-    <script src="js/scripts.min.js"></script>
-    <script>
-        // Random page generator
-        var sites = [
-            '/mission-daily-crypto-human-rights',
-            '/tim-ferriss-patrick-collison',
-            '/joe-rogan-elon-musk',
-            '/knowledge-project-naval',
-            '/ezra-klein-michael-pollan',
-            '/sam-harris-yuval-noah-harari',
-            '/how-i-built-this-joe-gebbia',
-            '/indie-hackers-pieter-levels',
-            '/unchained-crypto',
-            '/startup-podcast-arlan-hamilton',
-            '/reply-all-on-the-inside',
-            '/product-hunt-radio-future-of-media',
-            '/design-details-aspirational-open-mindedness',
-            '/casually-capable-fyre-egg-uber',
-            '/future-of-cities-work',
-            '/it-visionaries-cities',
-            '/invisible-office-hours-passion',
-            '/hurry-slowly-cal-newport',
-            '/angellist-radio-drew-wilson',
-            '/accidental-creative-atomic-habits',
-            '/anatomy-of-next-gme',
-            '/design-better-scaling-through-storytelling',
-            '/girlboss-radio-away-luggage',
-            '/inside-intercom-growth',
-            '/state-of-the-art-creativity',
-            '/wsj-designer-babies',
-            '/ycombinator-sam-altman',
-            '/co1-existing-over-exiting',
-            '/co1-minimalist-business',
-            '/the-pitch-best-of-2018',
-            '/rework-overnight-sensation',
-            '/yo-podcast-ajlkn',
-            '/the-catchup-call'
-        ];
-
-        // function randomSite() {
-        //   var i = parseInt(Math.random() * sites.length);
-        //   location.href = sites[i];
-        // }
-
-        // // Load random page on refresh
-        // if (sessionStorage.getItem('loaded') === null) {
-        //   sessionStorage.setItem('loaded', '1');
-        //   var randomUrl = sites[Math.floor(Math.random() * sites.length)];
-        //   window.location = randomUrl;
-        // } else {
-        //   sessionStorage.removeItem('loaded')
-        // }
-
-        $(document).ready(function () {
-            // If mobile or desktop
-            if ($(window).width() < 480) {
-                const tilt = $('.tilt').tilt();
-                tilt.tilt.destroy.call(tilt);
-
-                // Add dynamic colors based on covers
-                var rgb = new ColorFinder(function favorDark(r, g, b) {
-                    return r > 245 && g > 245 && b > 245 ? 0 : 1;
-                }).getMostProminentColor(
-                    document.getElementById('coverImg')
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            var _gauges = _gauges || [];
+            (function() {
+                var t = document.createElement('script');
+                t.type = 'text/javascript';
+                t.async = true;
+                t.id = 'gauges-tracker';
+                t.setAttribute('data-site-id', '5c2bf409d013b9134d84d262');
+                t.setAttribute(
+                    'data-track-path',
+                    'https://track.gaug.es/track.gif'
                 );
-                $('.cover-fill').css(
-                    'background-color',
-                    'rgb(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ')'
-                );
-                $('.cover-outline').css(
-                    'border',
-                    '1px solid rgb(' +
-                    rgb.r +
-                    ',' +
-                    rgb.g +
-                    ',' +
-                    rgb.b +
-                    ')'
-                );
-                $('.cover-color').css(
-                    'color',
-                    'rgb(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ')'
-                );
-            } else {
-                // Show Sponsor Popup
-                $('.popup-toggle').click(function () {
-                    $('.hero').toggleClass('hero-hide');
-                    $('.popup-close').toggleClass('popup-close-show');
-                    $('.input-name').focus();
-                });
-                $('.popup-close').click(function () {
-                    $(this).toggleClass('popup-close-show');
-                    $('.hero').toggleClass('hero-hide');
-                    $('.input-name').blur();
-                });
+                t.src = 'https://d2fuc4clr7gvcn.cloudfront.net/track.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(t, s);
+            })();
+        </script>
+        <script src="js/scripts.min.js"></script>
+        <script>
+            // Random page generator
+            var sites = [
+                '/mission-daily-crypto-human-rights',
+                '/tim-ferriss-patrick-collison',
+                '/joe-rogan-elon-musk',
+                '/knowledge-project-naval',
+                '/ezra-klein-michael-pollan',
+                '/sam-harris-yuval-noah-harari',
+                '/how-i-built-this-joe-gebbia',
+                '/indie-hackers-pieter-levels',
+                '/unchained-crypto',
+                '/startup-podcast-arlan-hamilton',
+                '/reply-all-on-the-inside',
+                '/product-hunt-radio-future-of-media',
+                '/design-details-aspirational-open-mindedness',
+                '/casually-capable-fyre-egg-uber',
+                '/future-of-cities-work',
+                '/it-visionaries-cities',
+                '/invisible-office-hours-passion',
+                '/hurry-slowly-cal-newport',
+                '/angellist-radio-drew-wilson',
+                '/accidental-creative-atomic-habits',
+                '/anatomy-of-next-gme',
+                '/design-better-scaling-through-storytelling',
+                '/girlboss-radio-away-luggage',
+                '/inside-intercom-growth',
+                '/state-of-the-art-creativity',
+                '/wsj-designer-babies',
+                '/ycombinator-sam-altman',
+                '/co1-existing-over-exiting',
+                '/co1-minimalist-business',
+                '/the-pitch-best-of-2018',
+                '/rework-overnight-sensation',
+                '/yo-podcast-ajlkn',
+                '/the-catchup-call'
+            ];
 
-                // Sponsor form
-                $('.form-sponsor').submit(function (e) {
-                    e.preventDefault();
-                    var $form = $(this);
-                    $.post($form.attr('action'), $form.serialize()).then(
-                        function () {
-                            $('.form-sponsor').addClass('form-hide');
-                            $('.form-success').addClass(
-                                'form-success-show'
-                            );
-                        }
+            // function randomSite() {
+            //   var i = parseInt(Math.random() * sites.length);
+            //   location.href = sites[i];
+            // }
+
+            // // Load random page on refresh
+            // if (sessionStorage.getItem('loaded') === null) {
+            //   sessionStorage.setItem('loaded', '1');
+            //   var randomUrl = sites[Math.floor(Math.random() * sites.length)];
+            //   window.location = randomUrl;
+            // } else {
+            //   sessionStorage.removeItem('loaded')
+            // }
+
+            $(document).ready(function() {
+                // If mobile or desktop
+                if ($(window).width() < 480) {
+                    const tilt = $('.tilt').tilt();
+                    tilt.tilt.destroy.call(tilt);
+
+                    // Add dynamic colors based on covers
+                    var rgb = new ColorFinder(function favorDark(r, g, b) {
+                        return r > 245 && g > 245 && b > 245 ? 0 : 1;
+                    }).getMostProminentColor(
+                        document.getElementById('coverImg')
                     );
-                });
-
-                // Tilted covers
-                $('.tilt').tilt({
-                    perspective: 1000,
-                    maxGlare: 0.4,
-                    glare: true,
-                    scale: 1.1
-                });
-
-                // Add dynamic colors based on covers
-                var rgb = new ColorFinder(function favorDark(r, g, b) {
-                    return r > 245 && g > 245 && b > 245 ? 0 : 1;
-                }).getMostProminentColor(
-                    document.getElementById('coverImg')
-                );
-                $('.cover-fill').css(
-                    'background-color',
-                    'rgb(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ')'
-                );
-                $('.cover-fill').css(
-                    'box-shadow',
-                    '0 40px 60px rgb(' +
-                    rgb.r +
-                    ',' +
-                    rgb.g +
-                    ',' +
-                    rgb.b +
-                    ',0.2)'
-                );
-                $('.cover-outline').css(
-                    'border',
-                    '1px solid rgb(' +
-                    rgb.r +
-                    ',' +
-                    rgb.g +
-                    ',' +
-                    rgb.b +
-                    ')'
-                );
-                $('.cover-color').css(
-                    'color',
-                    'rgb(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ')'
-                );
-            }
-
-            // Audio player
-            var castPlayers = document.querySelectorAll('.hero');
-            var speeds = [1, 1.5, 2];
-            for (i = 0; i < castPlayers.length; i++) {
-                var player = castPlayers[i];
-                var audio = player.querySelector('audio');
-                var play = player.querySelector('.play');
-                var pause = player.querySelector('.pause');
-                var rewind = player.querySelector('.rewind');
-                var progress = player.querySelector('.progress');
-                var forward = player.querySelector('.forward');
-                var speed = player.querySelector('.speed');
-                var mute = player.querySelector('.mute');
-                var currentTime = player.querySelector('.currenttime');
-                var duration = player.querySelector('.duration');
-                var currentSpeedIdx = 0;
-                pause.style.display = 'none';
-                var toHHMMSS = function (totalsecs) {
-                    var sec_num = parseInt(totalsecs, 10);
-                    var hours = Math.floor(sec_num / 3600);
-                    var minutes = Math.floor((sec_num - hours * 3600) / 60);
-                    var seconds = sec_num - hours * 3600 - minutes * 60;
-                    if (hours < 10) {
-                        hours = '0' + hours;
-                    }
-                    if (minutes < 10) {
-                        minutes = '0' + minutes;
-                    }
-                    if (seconds < 10) {
-                        seconds = '0' + seconds;
-                    }
-                    var time = hours + ':' + minutes + ':' + seconds;
-                    return time;
-                };
-                audio.addEventListener('loadedmetadata', function () {
-                    progress.setAttribute(
-                        'max',
-                        Math.floor(audio.duration)
+                    $('.cover-fill').css(
+                        'background-color',
+                        'rgb(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ')'
                     );
-                    duration.textContent = toHHMMSS(audio.duration);
-                });
-                audio.addEventListener('timeupdate', function () {
-                    progress.setAttribute('value', audio.currentTime);
-                    currentTime.textContent = toHHMMSS(audio.currentTime);
-                });
-                play.addEventListener(
-                    'click',
-                    function () {
-                        $('.cover').addClass('cover-playing');
-                        this.style.display = 'none';
-                        pause.style.display = 'inline-block';
-                        pause.focus();
-                        audio.play();
-                    },
-                    false
-                );
-                pause.addEventListener(
-                    'click',
-                    function () {
-                        $('.cover').removeClass('cover-playing');
-                        this.style.display = 'none';
-                        play.style.display = 'inline-block';
-                        play.focus();
-                        audio.pause();
-                    },
-                    false
-                );
-                rewind.addEventListener(
-                    'click',
-                    function () {
-                        audio.currentTime -= 15;
-                    },
-                    false
-                );
-                progress.addEventListener(
-                    'click',
-                    function (e) {
-                        audio.currentTime =
-                            Math.floor(audio.duration) *
-                            (e.offsetX / e.target.offsetWidth);
-                    },
-                    false
-                );
-                forward.addEventListener(
-                    'click',
-                    function () {
-                        audio.currentTime += 15;
-                    },
-                    false
-                );
-                speed.addEventListener(
-                    'click',
-                    function () {
-                        currentSpeedIdx =
-                            currentSpeedIdx + 1 < speeds.length ?
-                            currentSpeedIdx + 1 :
-                            0;
-                        audio.playbackRate = speeds[currentSpeedIdx];
-                        this.textContent = speeds[currentSpeedIdx] + 'x';
-                        return true;
-                    },
-                    false
-                );
-                mute.addEventListener(
-                    'click',
-                    function () {
-                        if (audio.muted) {
-                            audio.muted = false;
-                            $('.icon-mute').addClass('hide');
-                            $('.icon-unmute').removeClass('hide');
-                        } else {
-                            audio.muted = true;
-                            $('.icon-mute').removeClass('hide');
-                            $('.icon-unmute').addClass('hide');
+                    $('.cover-outline').css(
+                        'border',
+                        '1px solid rgb(' +
+                            rgb.r +
+                            ',' +
+                            rgb.g +
+                            ',' +
+                            rgb.b +
+                            ')'
+                    );
+                    $('.cover-color').css(
+                        'color',
+                        'rgb(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ')'
+                    );
+                } else {
+                    // Show Sponsor Popup
+                    $('.popup-toggle').click(function() {
+                        $('.hero').toggleClass('hero-hide');
+                        $('.popup-close').toggleClass('popup-close-show');
+                        $('.input-name').focus();
+                    });
+                    $('.popup-close').click(function() {
+                        $(this).toggleClass('popup-close-show');
+                        $('.hero').toggleClass('hero-hide');
+                        $('.input-name').blur();
+                    });
+
+                    // Sponsor form
+                    $('.form-sponsor').submit(function(e) {
+                        e.preventDefault();
+                        var $form = $(this);
+                        $.post($form.attr('action'), $form.serialize()).then(
+                            function() {
+                                $('.form-sponsor').addClass('form-hide');
+                                $('.form-success').addClass(
+                                    'form-success-show'
+                                );
+                            }
+                        );
+                    });
+
+                    // Tilted covers
+                    $('.tilt').tilt({
+                        perspective: 1000,
+                        maxGlare: 0.4,
+                        glare: true,
+                        scale: 1.1
+                    });
+
+                    // Add dynamic colors based on covers
+                    var rgb = new ColorFinder(function favorDark(r, g, b) {
+                        return r > 245 && g > 245 && b > 245 ? 0 : 1;
+                    }).getMostProminentColor(
+                        document.getElementById('coverImg')
+                    );
+                    $('.cover-fill').css(
+                        'background-color',
+                        'rgb(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ')'
+                    );
+                    $('.cover-fill').css(
+                        'box-shadow',
+                        '0 40px 60px rgb(' +
+                            rgb.r +
+                            ',' +
+                            rgb.g +
+                            ',' +
+                            rgb.b +
+                            ',0.2)'
+                    );
+                    $('.cover-outline').css(
+                        'border',
+                        '1px solid rgb(' +
+                            rgb.r +
+                            ',' +
+                            rgb.g +
+                            ',' +
+                            rgb.b +
+                            ')'
+                    );
+                    $('.cover-color').css(
+                        'color',
+                        'rgb(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ')'
+                    );
+                }
+
+                // Audio player
+                var castPlayers = document.querySelectorAll('.hero');
+                var speeds = [1, 1.5, 2];
+                for (i = 0; i < castPlayers.length; i++) {
+                    var player = castPlayers[i];
+                    var audio = player.querySelector('audio');
+                    var play = player.querySelector('.play');
+                    var pause = player.querySelector('.pause');
+                    var rewind = player.querySelector('.rewind');
+                    var progress = player.querySelector('.progress');
+                    var forward = player.querySelector('.forward');
+                    var speed = player.querySelector('.speed');
+                    var mute = player.querySelector('.mute');
+                    var currentTime = player.querySelector('.currenttime');
+                    var duration = player.querySelector('.duration');
+                    var currentSpeedIdx = 0;
+                    pause.style.display = 'none';
+                    var toHHMMSS = function(totalsecs) {
+                        var sec_num = parseInt(totalsecs, 10);
+                        var hours = Math.floor(sec_num / 3600);
+                        var minutes = Math.floor((sec_num - hours * 3600) / 60);
+                        var seconds = sec_num - hours * 3600 - minutes * 60;
+                        if (hours < 10) {
+                            hours = '0' + hours;
                         }
-                    },
-                    false
-                );
-            }
+                        if (minutes < 10) {
+                            minutes = '0' + minutes;
+                        }
+                        if (seconds < 10) {
+                            seconds = '0' + seconds;
+                        }
+                        var time = hours + ':' + minutes + ':' + seconds;
+                        return time;
+                    };
+                    audio.addEventListener('loadedmetadata', function() {
+                        progress.setAttribute(
+                            'max',
+                            Math.floor(audio.duration)
+                        );
+                        duration.textContent = toHHMMSS(audio.duration);
+                    });
+                    audio.addEventListener('timeupdate', function() {
+                        progress.setAttribute('value', audio.currentTime);
+                        currentTime.textContent = toHHMMSS(audio.currentTime);
+                    });
+                    play.addEventListener(
+                        'click',
+                        function() {
+                            $('.cover').addClass('cover-playing');
+                            this.style.display = 'none';
+                            pause.style.display = 'inline-block';
+                            pause.focus();
+                            audio.play();
+                        },
+                        false
+                    );
+                    pause.addEventListener(
+                        'click',
+                        function() {
+                            $('.cover').removeClass('cover-playing');
+                            this.style.display = 'none';
+                            play.style.display = 'inline-block';
+                            play.focus();
+                            audio.pause();
+                        },
+                        false
+                    );
+                    rewind.addEventListener(
+                        'click',
+                        function() {
+                            audio.currentTime -= 15;
+                        },
+                        false
+                    );
+                    progress.addEventListener(
+                        'click',
+                        function(e) {
+                            audio.currentTime =
+                                Math.floor(audio.duration) *
+                                (e.offsetX / e.target.offsetWidth);
+                        },
+                        false
+                    );
+                    forward.addEventListener(
+                        'click',
+                        function() {
+                            audio.currentTime += 15;
+                        },
+                        false
+                    );
+                    speed.addEventListener(
+                        'click',
+                        function() {
+                            currentSpeedIdx =
+                                currentSpeedIdx + 1 < speeds.length
+                                    ? currentSpeedIdx + 1
+                                    : 0;
+                            audio.playbackRate = speeds[currentSpeedIdx];
+                            this.textContent = speeds[currentSpeedIdx] + 'x';
+                            return true;
+                        },
+                        false
+                    );
+                    mute.addEventListener(
+                        'click',
+                        function() {
+                            if (audio.muted) {
+                                audio.muted = false;
+                                $('.icon-mute').addClass('hide');
+                                $('.icon-unmute').removeClass('hide');
+                            } else {
+                                audio.muted = true;
+                                $('.icon-mute').removeClass('hide');
+                                $('.icon-unmute').addClass('hide');
+                            }
+                        },
+                        false
+                    );
+                }
 
-            // Feather icons
-            feather.replace();
+                // Feather icons
+                feather.replace();
 
-            // Page transitions
-            $('.animsition').animsition({
-                linkElement: 'a:not([target="_blank"]):not([href^="#"])',
-                linkElement: '.animsition-link',
-                outDuration: 600,
-                inDuration: 600
+                // Page transitions
+                $('.animsition').animsition({
+                    linkElement: 'a:not([target="_blank"]):not([href^="#"])',
+                    linkElement: '.animsition-link',
+                    outDuration: 600,
+                    inDuration: 600
+                });
             });
-        });
-    </script>
-</body>
-
+        </script>
+    </body>
 </html>
