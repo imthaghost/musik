@@ -21,7 +21,7 @@ musik is a music discovery web application built in GO. Simply GO to the web-ser
 
 1. [Goals](#goals)
 2. [Local Development](#local-development)
-3. [Deliverables](#project-structure)
+3. [Project Structure](#project-structure)
 
 ## Goals
 
