@@ -1,228 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Primary Meta Tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=1"
-        />
-        <title>Musik</title>
-        <meta name="title" content="Musik" />
-        <meta name="description" content="Discover new music" />
-        <meta name="author" content="@imthaghost" />
 
-        <!-- Twitter -->
-        <meta property="twitter:title" content="Musik" />
-        <meta property="twitter:description" content="Discover new music" />
-        <meta property="twitter:image" content="images/social.jpg" />
+<head>
+    <!-- Primary Meta Tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Musik</title>
+    <meta name="title" content="Musik" />
+    <meta name="description" content="Discover new music" />
+    <meta name="author" content="@imthaghost" />
 
-        <!-- Linked Assets -->
-        <link href="images/favicon.png" rel="shortcut icon" />
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="images/thumbnail.jpg" rel="apple-touch-icon" />
-    </head>
+    <!-- Twitter -->
+    <meta property="twitter:title" content="Musik" />
+    <meta property="twitter:description" content="Discover new music" />
+    <meta property="twitter:image" content="images/social.jpg" />
 
-    <body class="animsition">
-        <nav class="nav">
-            <div class="left">
-                <img
-                    class="logo"
-                    src="https://d33wubrfki0l68.cloudfront.net/6b865dd7d830b2036acac440a14e37ec63169c8d/680cf/images/logo.svg"
-                    alt="Musik"
-                />
-                <h1 class="nav-title hide-mobile">
-                    Discover new music
-                </h1>
-            </div>
-            <div class="right">
-                <a
-                    class="button naked"
-                    href="https://github.com/imthaghost"
-                    target="_blank"
-                    ><span>Questions?</span>@imthaghost</a
-                >
-                <button class="button tiny popup-toggle hide-mobile">
-                    Sponsor?
-                </button>
-                <a
-                    href="mailto:imthaghost@protonmail.com"
-                    class="button tiny hide-desktop show-mobile"
-                    >Sponsor?</a
-                >
-                <div class="hide-mobile">
-                    <script
-                        async
-                        src="https://platform.twitter.com/widgets.js"
-                        charset="utf-8"
-                    ></script>
-                </div>
-            </div>
-        </nav>
-        <div class="popup">
+    <!-- Linked Assets -->
+    <link href="images/favicon.png" rel="shortcut icon" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="images/thumbnail.jpg" rel="apple-touch-icon" />
+</head>
+
+<body class="animsition">
+    <nav class="nav">
+        <div class="left">
+            <img class="logo"
+                src="https://d33wubrfki0l68.cloudfront.net/6b865dd7d830b2036acac440a14e37ec63169c8d/680cf/images/logo.svg"
+                alt="Musik" />
+            <h1 class="nav-title hide-mobile">
+                Discover new music
+            </h1>
+        </div>
+        <div class="right">
+            <a class="button naked" href="https://github.com/imthaghost"
+                target="_blank"><span>Questions?</span>@imthaghost</a>
+            <button class="button tiny popup-toggle hide-mobile">
+                Sponsor?
+            </button>
+            <a href="mailto:imthaghost@protonmail.com" class="button tiny hide-desktop show-mobile">Sponsor?</a>
             <div class="hide-mobile">
-                <div class="popup-header">
-                    <img
-                        class="logo"
-                        src="https://d33wubrfki0l68.cloudfront.net/6b865dd7d830b2036acac440a14e37ec63169c8d/680cf/images/logo.svg"
-                        alt="Musik"
-                    />
-                    <h2 class="popup-title">Discover new music</h2>
-                    <div class="divider"></div>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+    </nav>
+    <div class="popup">
+        <div class="hide-mobile">
+            <div class="popup-header">
+                <img class="logo"
+                    src="https://d33wubrfki0l68.cloudfront.net/6b865dd7d830b2036acac440a14e37ec63169c8d/680cf/images/logo.svg"
+                    alt="Musik" />
+                <h2 class="popup-title">Discover new music</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="form-wrapper">
+                <div class="form-success">
+                    <h2>🎈</h2>
+                    <h2>Sent</h2>
+                    <p>We'll get back to you within a day.</p>
                 </div>
-                <div class="form-wrapper">
-                    <div class="form-success">
-                        <h2>🎈</h2>
-                        <h2>Sent</h2>
-                        <p>We'll get back to you within a day.</p>
+                <form name="sponsor" class="form-sponsor" method="POST">
+                    <input type="hidden" name="form-name" value="sponsor" />
+                    <div class="input">
+                        <input type="text" name="name" id="name" class="input-text input-name"
+                            placeholder="What's your full name?" required />
+                        <label for="name" class="input-label">Full name</label>
                     </div>
-                    <form name="sponsor" class="form-sponsor" method="POST">
-                        <input type="hidden" name="form-name" value="sponsor" />
-                        <div class="input">
-                            <input
-                                type="text"
-                                name="name"
-                                id="name"
-                                class="input-text input-name"
-                                placeholder="What's your full name?"
-                                required
-                            />
-                            <label for="name" class="input-label"
-                                >Full name</label
-                            >
-                        </div>
-                        <div class="input">
-                            <input
-                                type="text"
-                                name="company"
-                                id="company"
-                                class="input-text"
-                                placeholder="What's your company's name?"
-                            />
-                            <label for="company" class="input-label"
-                                >Company name</label
-                            >
-                        </div>
-                        <div class="input">
-                            <input
-                                type="email"
-                                name="email"
-                                id="email"
-                                class="input-text"
-                                placeholder="What's your email?"
-                                required
-                            />
-                            <label for="email" class="input-label"
-                                >Email address</label
-                            >
-                        </div>
-                        <div class="input">
-                            <input
-                                type="text"
-                                name="budget"
-                                id="budget"
-                                class="input-text"
-                                placeholder="What's your budget?"
-                            />
-                            <label for="budget" class="input-label"
-                                >Budget</label
-                            >
-                        </div>
-                        <button type="submit" class="send">Send</button>
-                    </form>
-                </div>
+                    <div class="input">
+                        <input type="text" name="company" id="company" class="input-text"
+                            placeholder="What's your company's name?" />
+                        <label for="company" class="input-label">Company name</label>
+                    </div>
+                    <div class="input">
+                        <input type="email" name="email" id="email" class="input-text" placeholder="What's your email?"
+                            required />
+                        <label for="email" class="input-label">Email address</label>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="budget" id="budget" class="input-text"
+                            placeholder="What's your budget?" />
+                        <label for="budget" class="input-label">Budget</label>
+                    </div>
+                    <button type="submit" class="send">Send</button>
+                </form>
             </div>
         </div>
-        <button class="popup-close">
-            <i class="icon" data-feather="chevron-up"></i>
-        </button>
-        <div class="hero">
-            <div class="cover tilt cover-fill" data-tilt>
-                <img
-                    id="coverImg"
-                    class="cover-img"
-                    src="https://content-images.p-cdn.com/images/public/int/7/8/3/3/00602508243387_1080W_1080H.jpg"
-                    alt="We Love You Tecca"
-                />
+    </div>
+    <button class="popup-close">
+        <i class="icon" data-feather="chevron-up"></i>
+    </button>
+    <div class="hero">
+        <div class="cover tilt cover-fill" data-tilt>
+            <img id="coverImg" class="cover-img" src={{index . "artworkURL"}} alt="We Love You Tecca" />
+        </div>
+        <div class="progress-wrapper">
+            <p class="currenttime time">00:00:00</p>
+            <progress class="progress" value="0"></progress>
+            <p class="duration time">00:00:00</p>
+        </div>
+        <h2 class="title">
+            {{index . "name"}}
+        </h2>
+        <div class="controls">
+            <div class="player">
+                <button class="player-icon mute">
+                    <i data-feather="volume-x" class="icon icon-mute hide"></i><i data-feather="volume-2"
+                        class="icon icon-unmute"></i>
+                </button>
+                <button class="player-icon skip rewind">
+                    <span>15s</span><i class="icon" data-feather="skip-back"></i>
+                </button>
+                <button class="player-icon pause cover-fill">
+                    <i class="icon" data-feather="pause"></i>
+                </button>
+                <button class="player-icon play cover-fill">
+                    <i class="icon" data-feather="play"></i>
+                </button>
+                <button class="player-icon skip forward">
+                    <i class="icon" data-feather="skip-forward"></i><span>15s</span>
+                </button>
+                <button class="player-icon speed">1x</button>
+                <audio src={{index . "audioURL"}}></audio>
             </div>
-            <div class="progress-wrapper">
-                <p class="currenttime time">00:00:00</p>
-                <progress class="progress" value="0"></progress>
-                <p class="duration time">00:00:00</p>
-            </div>
-            <h2 class="title">
-                {{index . "name"}}
-            </h2>
-            <div class="controls">
-                <div class="player">
-                    <button class="player-icon mute">
-                        <i
-                            data-feather="volume-x"
-                            class="icon icon-mute hide"
-                        ></i
-                        ><i
-                            data-feather="volume-2"
-                            class="icon icon-unmute"
-                        ></i>
-                    </button>
-                    <button class="player-icon skip rewind">
-                        <span>15s</span
-                        ><i class="icon" data-feather="skip-back"></i>
-                    </button>
-                    <button class="player-icon pause cover-fill">
-                        <i class="icon" data-feather="pause"></i>
-                    </button>
-                    <button class="player-icon play cover-fill">
-                        <i class="icon" data-feather="play"></i>
-                    </button>
-                    <button class="player-icon skip forward">
-                        <i class="icon" data-feather="skip-forward"></i
-                        ><span>15s</span>
-                    </button>
-                    <button class="player-icon speed">1x</button>
-                    <audio src="music/ransom.mp3"></audio>
-                </div>
-                <div class="buttons">
-                    <button onclick="" class="button next cover-fill">
-                        New Song <i class="icon" data-feather="shuffle"></i>
-                    </button>
-                    <a
-                        class="button source cover-outline cover-color"
-                        href="https://github.com/imthaghost/musik/"
-                        target="_blank"
-                        >Source Code
-                        <i
-                            class="icon cover-color"
-                            data-feather="external-link"
-                        ></i
-                    ></a>
-                </div>
+            <div class="buttons">
+                <button onclick="" class="button next cover-fill">
+                    New Song <i class="icon" data-feather="shuffle"></i>
+                </button>
+                <a class="button source cover-outline cover-color" href="https://github.com/imthaghost/musik/"
+                    target="_blank">Source Code
+                    <i class="icon cover-color" data-feather="external-link"></i></a>
             </div>
         </div>
-        <div class="cover-bg">
-            <img
-                src="https://content-images.p-cdn.com/images/public/int/7/8/3/3/00602508243387_1080W_1080H.jpg"
-            />
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="text/javascript">
-            var _gauges = _gauges || [];
-            (function() {
-                var t = document.createElement('script');
-                t.type = 'text/javascript';
-                t.async = true;
-                t.id = 'gauges-tracker';
-                t.setAttribute('data-site-id', '5c2bf409d013b9134d84d262');
-                t.setAttribute(
-                    'data-track-path',
-                    'https://track.gaug.es/track.gif'
-                );
-                t.src = 'js/track.js';
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(t, s);
-            })();
-        </script>
-        <script src="js/scripts.min.js"></script>
-        <script src="js/artwork.js"></script>
-    </body>
+    </div>
+    <div class="cover-bg">
+        <img src={{index . "artworkURL"}} />
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        var _gauges = _gauges || [];
+        (function () {
+            var t = document.createElement('script');
+            t.type = 'text/javascript';
+            t.async = true;
+            t.id = 'gauges-tracker';
+            t.setAttribute('data-site-id', '5c2bf409d013b9134d84d262');
+            t.setAttribute(
+                'data-track-path',
+                'https://track.gaug.es/track.gif'
+            );
+            t.src = 'js/track.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(t, s);
+        })();
+    </script>
+    <script src="js/scripts.min.js"></script>
+    <script src="js/artwork.js"></script>
+</body>
+
 </html>

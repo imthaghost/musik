@@ -50,7 +50,9 @@ func main() {
 	// Named route "index"
 	e.GET("/", func(c echo.Context) error {
 		return c.Render(http.StatusOK, "index.html", map[string]interface{}{
-			"name": "Ransom - Lil Tecca & Juice Wrld",
+			"name":       "Ransom - Lil Tecca & Juice Wrld",
+			"audioURL":   "http://localhost:5000/music/ransom.mp3",
+			"artworkURL": "https://content-images.p-cdn.com/images/public/int/7/8/3/3/00602508243387_1080W_1080H.jpg",
 		})
 	}).Name = "index"
 
