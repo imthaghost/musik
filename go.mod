@@ -3,6 +3,8 @@ module github.com/imthaghost/musik
 go 1.13
 
 require (
+	github.com/joho/godotenv v1.3.0 // indirect
+	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/labstack/echo v3.3.10+incompatible
 	github.com/mattn/echo-livereload v0.0.0-20200128104040-3da1cf6937dc
 	github.com/mattn/go-isatty v0.0.12 // indirect
