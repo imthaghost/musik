@@ -6,11 +6,10 @@ import (
 	"net/http"
 	"text/template"
 
+	"github.com/imthaghost/musik/api"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 	livereload "github.com/mattn/echo-livereload"
-
-	"github.com/imthaghost/musik/api"
 )
 
 // TemplateRenderer is a custom html/template renderer for Echo framework
