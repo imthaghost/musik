@@ -1,15 +1,12 @@
 package main
 
 import (
-	"fmt"
 	"io"
 	"net/http"
 	"text/template"
 
-	"github.com/imthaghost/musik/api"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
-	livereload "github.com/mattn/echo-livereload"
 )
 
 // TemplateRenderer is a custom html/template renderer for Echo framework
@@ -30,8 +27,7 @@ func (t *TemplateRenderer) Render(w io.Writer, name string, data interface{}, c 
 
 func main() {
 	e := echo.New()
-	// Live Reload
-	e.Use(livereload.LiveReload())
+
 	// Log Output
 	e.Use(middleware.Logger())
 	// Stream Recovery
@@ -48,19 +44,13 @@ func main() {
 		templates: template.Must(template.ParseGlob("*.html")),
 	}
 	e.Renderer = renderer
+
 	// Named route "index"
 	e.GET("/", func(c echo.Context) error {
-		tracks := api.Track()
-		fmt.Println(tracks)
 		return c.Render(http.StatusOK, "index.html", map[string]interface{}{
-
-			"name":       "Ransom - Lil Tecca & Juice Wrld",
-			"audioURL":   "http://localhost:5000/music/ransom.mp3",
-			"artworkURL": "https://content-images.p-cdn.com/images/public/int/7/8/3/3/00602508243387_1080W_1080H.jpg",
+			"name": "Ransom - Lil Tecca & Juice Wrld",
 		})
-
 	}).Name = "index"
 
 	e.Logger.Fatal(e.Start(":5000"))
-
 }
