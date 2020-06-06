@@ -26,7 +26,7 @@ Musik is a SoundCloud music discovery web application built in GO. Simply go to 
 
 ```bash
 # start the server
-go run main.go
+go run server.go
 
 ```
 
