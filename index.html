@@ -8,6 +8,7 @@
             content="width=device-width, initial-scale=1.0, maximum-scale=1"
         />
         <title>Musik</title>
+        <meta http-equiv="Cache-control" content="no-cache">
         <meta name="title" content="Musik" />
         <meta name="description" content="Discover new music" />
         <meta name="author" content="@imthaghost" />
@@ -141,8 +142,8 @@
                 <img
                     id="coverImg"
                     class="cover-img"
-                    src="https://content-images.p-cdn.com/images/public/int/7/8/3/3/00602508243387_1080W_1080H.jpg"
-                    alt="We Love You Tecca"
+                    src="{{.artwork}}"
+                    
                 />
             </div>
             <div class="progress-wrapper">
@@ -180,11 +181,12 @@
                         ><span>15s</span>
                     </button>
                     <button class="player-icon speed">1x</button>
-                    <audio src="music/ransom.mp3"></audio>
+                   
+                    <audio src="{{.song}}"></audio>
                 </div>
                 <div class="buttons">
                     <button
-                        onclick="randomSite();"
+                        onclick="clearit()"
                         class="button next cover-fill"
                     >
                         New Song <i class="icon" data-feather="shuffle"></i>
@@ -226,6 +228,7 @@
             })();
         </script>
         <script src="js/scripts.min.js"></script>
+        <script src="js/custom.js"></script>
         <script>
             // Random page generator
             var sites = [

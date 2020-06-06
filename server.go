@@ -2,9 +2,12 @@ package main
 
 import (
 	"io"
+	"math/rand"
 	"net/http"
 	"text/template"
+	"time"
 
+	"github.com/imthaghost/musik/soundcloud"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 )
@@ -25,12 +28,17 @@ func (t *TemplateRenderer) Render(w io.Writer, name string, data interface{}, c 
 	return t.templates.ExecuteTemplate(w, name, data)
 }
 
+var songlist = [...]string{"https://soundcloud.com/polo-g/polo-g-feat-juice-wrld-flex", "https://soundcloud.com/roddyricch/the-box", "https://soundcloud.com/lil-baby-4pf/sum-2-prove"}
+var old string
+
 func main() {
+	// random integer
+
 	e := echo.New()
 
 	// Log Output
 	e.Use(middleware.Logger())
-	// Stream Recovery
+	// stream
 	e.Use(middleware.Recover())
 	// CORS
 	e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
@@ -47,8 +55,20 @@ func main() {
 
 	// Named route "index"
 	e.GET("/", func(c echo.Context) error {
+		rand.Seed(time.Now().Unix())
+		var n = rand.Int() % len(songlist)
+
+		// err := os.Remove("assets/music/" + old)
+		// if err != nil {
+
+		// }
+		songname, image, path := soundcloud.ExtractSong(songlist[n])
+		old = path
 		return c.Render(http.StatusOK, "index.html", map[string]interface{}{
-			"name": "Ransom - Lil Tecca & Juice Wrld",
+
+			"name":    songname,
+			"artwork": image,
+			"song":    "music/" + path,
 		})
 	}).Name = "index"
 
