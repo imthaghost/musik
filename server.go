@@ -34,7 +34,6 @@ var songlist = [...]string{"https://soundcloud.com/uiceheidd/tell-me-you-love-me
 var old string
 
 func main() {
-	// random integer
 
 	e := echo.New()
 

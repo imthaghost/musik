@@ -9,6 +9,7 @@ require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
 	github.com/fatih/color v1.9.0
 	github.com/grafov/m3u8 v0.11.1
+	github.com/jasonlvhit/gocron v0.0.0-20200423141508-ab84337f7963 // indirect
 	github.com/kr/pretty v0.1.0 // indirect
 	github.com/labstack/echo v3.3.10+incompatible
 	github.com/labstack/gommon v0.3.0 // indirect
