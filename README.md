@@ -22,11 +22,20 @@ Musik is a SoundCloud music discovery web application built in GO. Simply go to 
 -   [License](#license)
 -   [Contributors](#contributors)
 
-## 🚀 Starting the Server
+## 🚀 Starting with Docker
+
+![Docker](/docs/media/docker.gif)
 
 ```bash
 # we can build and start the server with docker
 docker-compose up --build
+
+```
+
+## 🚀 Starting manually
+```bash
+# go run
+go run server.go
 
 ```
 
