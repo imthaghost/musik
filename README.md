@@ -33,6 +33,9 @@ docker-compose up --build
 ```
 
 ## 🚀 Starting manually
+
+![Docker](/docs/media/manual.gif)
+
 ```bash
 # go run
 go run server.go
