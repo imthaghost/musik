@@ -28,7 +28,9 @@ func (t *TemplateRenderer) Render(w io.Writer, name string, data interface{}, c 
 	return t.templates.ExecuteTemplate(w, name, data)
 }
 
-var songlist = [...]string{"https://soundcloud.com/polo-g/polo-g-feat-juice-wrld-flex", "https://soundcloud.com/roddyricch/the-box", "https://soundcloud.com/lil-baby-4pf/sum-2-prove"}
+var songlist = [...]string{"https://soundcloud.com/uiceheidd/tell-me-you-love-me", "https://soundcloud.com/gunna/top-floor-feat-travis-scott", "https://soundcloud.com/shallou/forget", "https://soundcloud.com/liltjay/zoo-york-feat-fivio-foreign",
+	"https://soundcloud.com/polo-g/polo-g-feat-juice-wrld-flex", "https://soundcloud.com/polo-g/polo-g-feat-lil-baby-be", "https://soundcloud.com/uiceheidd/righteous", "https://soundcloud.com/meduzamusic/lose-control",
+	"https://soundcloud.com/roddyricch/the-box", "https://soundcloud.com/lil-baby-4pf/sum-2-prove", "https://soundcloud.com/ianndior/prospect-feat-lil-baby", "https://soundcloud.com/poorchoice/chateau"}
 var old string
 
 func main() {
@@ -62,10 +64,11 @@ func main() {
 		// if err != nil {
 
 		// }
-		songname, image, path := soundcloud.ExtractSong(songlist[n])
+		g := songlist[n]
+		songname, image, path := soundcloud.ExtractSong(g)
 		old = path
 		return c.Render(http.StatusOK, "index.html", map[string]interface{}{
-
+			"url":     g,
 			"name":    songname,
 			"artwork": image,
 			"song":    "music/" + path,
