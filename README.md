@@ -1,5 +1,5 @@
 <p align="center">
-musik is a music discovery web application built in GO. Simply GO to the web-server and start discovering new music!
+Musik is a SoundCloud music discovery web application built in GO. Simply go to the web-server and start discovering new music!
 </p>
 
 <br>
@@ -18,46 +18,29 @@ musik is a music discovery web application built in GO. Simply GO to the web-ser
 <br>
 
 ### 📚 Table of Contents
+-   [Starting Server](#startingtheserver)
+-   [License](#license)
+-   [Contributors](#contributors)
 
-1. [Goals](#goals)
-2. [Local Development](#local-development)
-3. [Project Structure](#project-structure)
-
-## Goals
-
-## Local Development
-
-> Start the server
+## 🚀 Starting the Server
 
 ```bash
-go run server.go
+# start the server
+go run main.go
+
 ```
 
-## Project Structure
+## 📝 License
 
-```bash
-📂 musik
-├── LICENSE
-├── README.md
-├── index.html
-├── assets
-│   ├── css
-│   │   └── styles.css
-│   ├── fonts
-│   ├── images
-│   │   ├── favicon.png
-│   │   └── thumbnail.jpg
-│   ├── js
-│   │   ├── scripts.min.js
-│   │   └── track.js
-│   └── music
-│       └── endoftheroad.mp3
-├── controllers
-│   └── test
-│       └── handler.go
-├── go.mod
-├── go.sum
-├── html
-│   └── render.go
-└── server.go
-```
+By contributing, you agree that your contributions will be licensed under its MIT License.
+
+In short, when you submit code changes, your submissions are understood to be under the same [MIT License](http://choosealicense.com/licenses/mit/) that covers the project. Feel free to contact the maintainers if that's a concern.
+
+## Contributors
+
+Contributions are welcome! Please see [Contributing Guide](https://github.com/imthaghost/goclone/blob/master/docs/CONTRIBUTING.md) for more details.
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/imthaghost"><img src="https://avatars3.githubusercontent.com/u/46610773?s=460&v=4" width="75px;" alt="Gary Frederick"/><br /><sub><b>Tha Ghost</b></sub></a><br /><a href="https://github.com/imthaghost/musik/commits?author=imthaghost" title="Code">💻</a></td>
+  </tr>
