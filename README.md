@@ -1,5 +1,5 @@
 <p align="center">
-Musik is a SoundCloud music discovery web application built in GO. Simply go to the web-server and start discovering new music!
+Musik is a SoundCloud music discovery web application built in Golang. Simply go to the web-server and start discovering new music!
 </p>
 
 <br>
@@ -13,16 +13,18 @@ Musik is a SoundCloud music discovery web application built in GO. Simply go to 
 
 <br>
 <p align="center">
-   <a href="#"><img src="https://github.com/imthaghost/musik/blob/master/docs/media/end.png"></a>  
+   <a href="#"><img src="https://github.com/imthaghost/musik/blob/master/docs/media/player.gif"></a>  
 </p>
 <br>
 
 ### 📚 Table of Contents
--   [Starting Server](#startingtheserver)
+-   [Local Development](#localdevelopment)
 -   [License](#license)
 -   [Contributors](#contributors)
 
-## 🚀 Starting with Docker
+## 🚀 Local Development
+
+### Starting server with Docker-compose
 
 ![Docker](/docs/media/docker.gif)
 
@@ -32,7 +34,7 @@ docker-compose up --build
 
 ```
 
-## 🚀 Starting manually
+### Starting server with go
 
 ![Docker](/docs/media/manual.gif)
 
