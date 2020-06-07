@@ -26,8 +26,6 @@ Musik is a SoundCloud music discovery web application built in Golang. Simply go
 
 ### Starting server with Docker-compose
 
-![Docker](/docs/media/docker.gif)
-
 ```bash
 # we can build and start the server with docker
 docker-compose up --build
@@ -35,8 +33,6 @@ docker-compose up --build
 ```
 
 ### Starting server with go
-
-![Docker](/docs/media/manual.gif)
 
 ```bash
 # go run
