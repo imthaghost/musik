@@ -4,6 +4,7 @@ import (
 	"io"
 	"math/rand"
 	"net/http"
+	"os"
 	"text/template"
 	"time"
 
@@ -33,8 +34,19 @@ var songlist = [...]string{"https://soundcloud.com/uiceheidd/tell-me-you-love-me
 	"https://soundcloud.com/roddyricch/the-box", "https://soundcloud.com/lil-baby-4pf/sum-2-prove", "https://soundcloud.com/ianndior/prospect-feat-lil-baby", "https://soundcloud.com/poorchoice/chateau"}
 var old string
 
+func CreateDirIfNotExist(dir string) {
+	if _, err := os.Stat(dir); os.IsNotExist(err) {
+		err = os.MkdirAll(dir, 0755)
+		if err != nil {
+			panic(err)
+		}
+	}
+}
 func main() {
-
+	// remove directory
+	os.RemoveAll("assets/music")
+	// create directory
+	os.MkdirAll("assets/music", 0777)
 	e := echo.New()
 
 	// Log Output
@@ -56,6 +68,7 @@ func main() {
 
 	// Named route "index"
 	e.GET("/", func(c echo.Context) error {
+
 		rand.Seed(time.Now().Unix())
 		var n = rand.Int() % len(songlist)
 
