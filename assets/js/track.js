@@ -207,8 +207,3 @@ var _gauges = _gauges || [];
         _gauges.push(h[g]);
     }
 })();
-
-function clearit(){
-    window.location = window.location.href+'?eraseCache=true';
-    window.location.href=window.location.href
-  }
