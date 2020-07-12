@@ -2,12 +2,15 @@ package soundcloud
 
 import (
 	"bytes"
+	"io/ioutil"
+	"log"
+	"net/http"
 
 	"github.com/PuerkitoBio/goquery"
 )
 
 // GetArtwork  returns the song artwork url
-func GetArtwork(data []byte) string {
+func GetArtwork(data []byte) (string, []byte) {
 	var url string
 	r := bytes.NewReader(data)
 	doc, err := goquery.NewDocumentFromReader(r)
@@ -20,5 +23,14 @@ func GetArtwork(data []byte) string {
 			url = data
 		}
 	})
-	return url
+	artworkresp, err := http.Get(url)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	// image data
+	image, err := ioutil.ReadAll(artworkresp.Body)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	return url, image
 }
