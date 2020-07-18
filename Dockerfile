@@ -1,4 +1,4 @@
-# Golang version
+# Golang version - Docker Hub (hub.docker.com)
 FROM golang:alpine3.12
 
 # Enviornment variables

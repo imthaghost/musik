@@ -72,10 +72,10 @@ func main() {
 		rand.Seed(time.Now().Unix())
 		var n = rand.Int() % len(songlist)
 
-		// err := os.Remove("assets/music/" + old)
-		// if err != nil {
+		err := os.Remove("assets/music/" + old)
+		if err != nil {
 
-		// }
+		}
 		g := songlist[n]
 		songname, image, path := soundcloud.ExtractSong(g)
 		old = path

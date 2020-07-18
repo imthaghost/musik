@@ -5,21 +5,4 @@ services:
     container_name: musik
     ports:
      - "5000:5000"
-  netdata:
-  image: firehol/netdata
-  container_name: netdata
-  hostname: monitor.imthaghost.dev
-  ports:
-    - 19999:19999
-  cap_add:
-    - SYS_PTRACE
-  security_opt:
-    - apparmor:unconfined
-  volumes:
-    - /proc:/host/proc:ro
-    - /sys:/host/sys:ro
-    - /var/run/docker.sock:/var/run/docker.sock:ro
-  environment:
-    - VIRTUAL_HOST=monitor.imthaghost.dev
-    - LETSENCRYPT_HOST=monitor.imthaghost.dev
-    - LETSENCRYPT_EMAIL=EMAIL@imthaghost.dev
+     
