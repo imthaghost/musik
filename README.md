@@ -12,7 +12,7 @@ Musik is a SoundCloud music discovery web application built in Golang. Simply go
 
 <br>
 <p align="center">
-   <a href="#"><img src="https://github.com/imthaghost/musik/blob/master/docs/media/example.gif"></a>  
+   <a href="#"><img src="https://github.com/imthaghost/musik/blob/master/docs/media/musik.gif"></a>  
 </p>
 <br>
 
