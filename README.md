@@ -1,16 +1,18 @@
 <p align="center">
 Musik is a SoundCloud music discovery web application built in Golang. Simply go to the web-server and start discovering new music!
 </p>
-
+<br>
+<p align="center"><a href="https://musik.imthaghost.dev/">Live Web App</a></p>
 <br>
 <p align="center">
   <a href="https://goreportcard.com/badge/github.com/imthaghost/musik"><img src="https://goreportcard.com/badge/github.com/imthaghost/musik"></a>
+  <a href="https://github.com/imthaghost/musik/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
 </p>
 <br>
 
 <br>
 <p align="center">
-   <a href="#"><img src="https://github.com/imthaghost/musik/blob/master/docs/media/player.gif"></a>  
+   <a href="#"><img src="https://github.com/imthaghost/musik/blob/master/docs/media/example.gif"></a>  
 </p>
 <br>
 
