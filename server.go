@@ -4,6 +4,7 @@ import (
 	"io"
 	"math/rand"
 	"net/http"
+	"os"
 	"text/template"
 	"time"
 
@@ -34,7 +35,10 @@ var songlist = [...]string{"https://soundcloud.com/uiceheidd/tell-me-you-love-me
 var old string
 
 func main() {
-
+	path := "assets/music"
+	if _, err := os.Stat(path); os.IsNotExist(err) {
+		os.Mkdir(path, 0777)
+	}
 	e := echo.New()
 
 	// Log Output
